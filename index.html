@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon/android-chrome-512x512.png" type="image/x-icon">
     <title>kdkp07</title>
     <script src="https://kit.fontawesome.com/f9839cf0fe.js" crossorigin="anonymous"></script>
 </head>
@@ -14,11 +15,11 @@
             <nav>
                 <img src="static/logo.png" class="logo" width="20%" alt="">
                 <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Service</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <!-- <li><a href="#services">Service</a></li> -->
+                    <li><a href="#portfolio" onclick="closemenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()" ></i>  
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -26,8 +27,9 @@
 
             </nav>
             <div class="header-text">
-                <p>Web Developer</p>
-                <h1>Hi, I'm <span>Kuldeep</span><br> Patidar</h1>
+                <h1>Hi,I'm <span>Kuldeep</span><br> Patidar</h1>
+                <p>Upcoming Intern @Samsung Research <br>Bangalore</p><br>
+                <p>Junior undergrad at National Institute of <br> Technology Karnataka</p>
             </div>
         </div>
     </div>
@@ -40,7 +42,11 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque at ipsum aliquid officia ab odit aperiam nemo ut quod soluta suscipit perferendis iusto molestiae explicabo qui, iste praesentium incidunt veritatis.</p>
+                    <p>Heyy!! I am a junior undergrad at NITK.I behold a smooth interest in building websites and learning new technologies. 
+                        Besides programming I have a nice interest in Cricket.Really looking forward to be a good developer.
+                        <br><br>
+                        I am currentlly focussing on problem solving on leetcode and also leanrning javascript by making small but effective projects.
+                    </p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
@@ -64,7 +70,7 @@
 
                     <div class="tab-contents" id="courses">
                         <ul>
-                            <li><span>Database Management Systems</span><br>Learnt SQL</li>
+                            <li><span>Database Management Systems</span><br>MySQL and core concepts of DBMS</li>
                             <li><span>Data Structures</span><br>Graph & DP</li>
                             <li><span>Computer Networks</span><br>Various protocols</li>
                         </ul>
@@ -75,7 +81,7 @@
     </div>
 
     <!-- -----------services-------- -->
-    <div id="services">
+    <!-- <div id="services">
         <div class="container">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
@@ -101,38 +107,41 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 <!-- ---------portfolio--------- -->
 <div id="portfolio">
     <div class="container">
-        <h1 class="sub-title">My Work</h1>
+        <h1 class="sub-title">My Projects</h1>
         <div class="work-list">
             <div class="work">
-                <img src="static/work-1.png" alt="">
+                <img src="static/work-1.png" alt="Digital Ghadi">
                 <div class="layer">
-                    <h3>Social</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo possimus debitis fugiat ipsum ullam impedit maiores dolorem rerum blanditiis animi eveniet, distinctio, alias suscipit a. Totam omnis sed corporis consequatur.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>Digital Ghadi</h3>
+                    <p>The real time digital clock
+                        <br> PS : Just practised Javascript and CSS.</p>
+                    <a href=" https://papaya-mousse-81c6f5.netlify.app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="static/work-2.png" alt="">
+                <img src="static/work-2.png" alt="Multiplication App">
                 <div class="layer">
-                    <h3>Media</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo possimus debitis fugiat ipsum ullam impedit maiores dolorem rerum blanditiis animi eveniet, distinctio, alias suscipit a. Totam omnis sed corporis consequatur.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>Multiplication App</h3>
+                    <p>A multiplication app just for fun
+                        <br>
+                        PS : Tried animations in css and wrote some javascript</p>
+                    <a href="https://kdkp07.github.io/MultiplicationApp/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="static/work-3.png" alt="">
+                <img src="static/work-3.png" alt="Todo App">
                 <div class="layer">
-                    <h3>App</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo possimus debitis fugiat ipsum ullam impedit maiores dolorem rerum blanditiis animi eveniet, distinctio, alias suscipit a. Totam omnis sed corporis consequatur.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>Todo App</h3>
+                    <p>The intention here is to create a web app using Djnago that can perform operations like create/delete/update/view with user Registration and Login</p>
+                    <a href="https://github.com/kdkp07/django-todo-app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">See More</a>
+        <!-- <a href="#" class="btn">See More</a> -->
     </div>
 </div>
 
@@ -145,24 +154,27 @@
                 <p><i class="fa-regular fa-envelope"></i>patidarkuldeep660@gmail.com</p>
                 <p><i class="fa-solid fa-phone"></i>+91 9179620587</p>
                 <div class="social-icons">
-                    <a href="https://twitter.com/kdkp07"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://instagram.com/kdkp07"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/kuldeep-patidar-402050204/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/kdkp07"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://twitter.com/kdkp07" target="_blank" ><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://instagram.com/kdkp07" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/kuldeep-patidar-402050204/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/kdkp07" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
                 <a href="static/FinalResume.pdf" download class="btn btn2">Download Resume</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your name" required >
-                    <input type="email" name="Email" placeholder="Your Mail" required autofocus>
+                    <input type="email" name="Email" placeholder="Your Mail" required >
                     <textarea name="Message" rows="6" placeholder="Feel free to contact me or say Hi"></textarea>
-                    <button type="submit" class="btn btn2">Submiit</button>
+                    <button type="submit" class="btn btn2">Submit</button>
                 </form>
+                
                 <span id="msg"></span>
             </div>
+            <!-- <a id="top" href="#header" class="btn btn2">Back to top <i class="fa-solid fa-arrow-up"></i></a> -->
         </div>
     </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <div class="footer">
         <p>Copyright © 2022-23 Made with <i class="fa-solid fa-heart"></i> by Kuldeep</p>
     </div>
